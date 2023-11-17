@@ -21,7 +21,7 @@ I decided to put all my types in a 'types' folder. Usually, I would have folders
 
 In utils, I keep some helper functions to avoid making too many calculations in my layouts
 
-## If I have more time
+## If I had more time
 
 Now, I focused a lot on how I think it's important to have a separation of concerns in a frontend. If I had an endless amount of time to dedicate to this project, I would have added tests, especially for the calculations and transformations that are made. The extent of testing in components and layouts depends on the product and the team.
 
