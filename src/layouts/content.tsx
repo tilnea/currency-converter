@@ -4,7 +4,7 @@ import { useLocalStorage } from "../hooks/use-local-storage";
 import { Amount } from "../components/amount/amount";
 import { Title } from "../components/title/title";
 import { Valuation } from "../components/valuation/valuation";
-import { Currencies } from "../components/currencies/currencies";
+import { Currencies } from "./currencies";
 import { Date as InputDate } from "../components/date/date";
 import { useGetAllCurrenies } from "../domain/use-case/currency/use-get-all-currencies";
 import { useGetHistory } from "../domain/use-case/currency/use-get-history";
@@ -13,6 +13,8 @@ import { useGetBase } from "../domain/use-case/currency/use-get-base";
 import { getToday } from "../utils/dates";
 import { Icon } from "../components/icon/icon";
 
+const BREAKPOINT = 900;
+
 const Layout = styled.div`
   display: flex;
   padding: 30px;
@@ -20,7 +22,7 @@ const Layout = styled.div`
   gap: 30px;
   background: ${(props) => props.theme.background};
 
-  @media (min-width: 900px) {
+  @media (min-width: ${BREAKPOINT}px) {
     gap: 50px;
   }
 `;
@@ -32,6 +34,10 @@ const TitleLayout = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
+
+  @media (min-width: ${BREAKPOINT}px) {
+    padding: 30px 0 10px;
+  }
 `;
 
 const ValueLayout = styled.div`

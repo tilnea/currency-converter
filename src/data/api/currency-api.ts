@@ -29,7 +29,6 @@ const fetchLatestRates = async (currencies: string): Promise<RatesDTO> => {
       USD: 1,
       AUD: 1.2998,
       RUB: 0.4321,
-      THB: 0.3447,
     },
     timestamp: 1699948800,
   };

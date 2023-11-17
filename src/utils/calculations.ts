@@ -1,10 +1,9 @@
 export const calculateNewAmount = (
-  amount: string,
+  amount: number,
   rate: number,
   base: number
 ): number => {
   return (
-    Math.round(((parseFloat(amount) * rate) / base + Number.EPSILON) * 100000) /
-    100000
+    Math.round(((amount * rate) / base + Number.EPSILON) * 100000) / 100000
   );
 };
