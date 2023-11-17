@@ -1,12 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import { historical1, historical2 } from "../../mockData/historical";
 import { RatesDTO, CurrenciesDTO } from "../../types/dto.types";
 
 import { API_KEY } from "../../secret";
 const baseUrl = `https://openexchangerates.org/api/`;
 
 const fetchLatestRates = async (currencies: string): Promise<RatesDTO> => {
-  /*   const data = await fetch(
+  const data = await fetch(
     `${baseUrl}latest.json?app_id=${API_KEY}&symbols=${currencies}`,
     {
       method: "GET",
@@ -16,26 +15,11 @@ const fetchLatestRates = async (currencies: string): Promise<RatesDTO> => {
     }
   ).then((res) => res.json());
 
-  return data; */
-
-  return {
-    base: "USD",
-    disclaimer: "Usage subject to terms: https://openexchangerates.org/terms",
-    license: "https://openexchangerates.org/license",
-    rates: {
-      GBP: 0.813313,
-      SEK: 10.853541,
-      SGD: 1.360483,
-      USD: 1,
-      AUD: 1.2998,
-      RUB: 0.4321,
-    },
-    timestamp: 1699948800,
-  };
+  return data;
 };
 
 const fetchHistoricalRates = async (date: string): Promise<RatesDTO> => {
-  /*   const data = await fetch(
+  const data = await fetch(
     `${baseUrl}historical/${date}.json?app_id=${API_KEY}`,
     {
       method: "GET",
@@ -47,12 +31,7 @@ const fetchHistoricalRates = async (date: string): Promise<RatesDTO> => {
     return res.json();
   });
 
-  return data; */
-
-  if (date === "1999-01-01") {
-    return historical1;
-  }
-  return historical2;
+  return data;
 };
 
 const fetchCurrencies = async (): Promise<CurrenciesDTO> => {

@@ -73,26 +73,26 @@ export const Content = () => {
 
   const {
     data: allCurrencies,
-    isLoading: isLoadingAllCurrencies,
-    isError: isErrorAllCurrencies,
+    //isLoading: isLoadingAllCurrencies,  these should be handled
+    //isError: isErrorAllCurrencies,      in a real project
   } = useGetAllCurrenies();
 
   const {
     data: rates,
-    isLoading: isLoadingRates,
-    isError: isErrorRates,
+    //isLoading: isLoadingRates,
+    //isError: isErrorRates,
   } = useGetLatest(displayCurrencies);
 
   const {
     data: startRatio,
-    isLoading: isLoadingStartRatio,
-    isError: isErrorStartRatio,
+    //isLoading: isLoadingStartRatio,
+    //isError: isErrorStartRatio,
   } = useGetHistory(startDate, selectedCurrency);
 
   const {
     data: endRatio,
-    isLoading: isLoadingEndRatio,
-    isError: isErrorEndRatio,
+    //isLoading: isLoadingEndRatio,
+    //isError: isErrorEndRatio,
   } = useGetHistory(endDate, selectedCurrency);
 
   const { data: baseCurrency } = useGetBase(
