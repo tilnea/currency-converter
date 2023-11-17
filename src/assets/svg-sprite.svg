@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="arrow" viewBox="0 0 24 24"  fill="none"><path d="M22.312 11.736a.415.415 0 0 1-.012.717l-8.033 4.464a.415.415 0 0 1-.615-.369l.15-9.189a.415.415 0 0 1 .628-.348l7.882 4.725Z" fill="currentColor"/><path d="M1.584 11.574c0-.27.218-.488.487-.488h11.756v1.767H2.071a.487.487 0 0 1-.487-.487v-.792Z" fill="currentColor"/></symbol>
+    <symbol id="arrowhead" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.339 7.783a.415.415 0 0 0-.718 0l-4.595 7.959c-.16.276.04.622.359.622h9.19c.319 0 .518-.346.359-.622l-4.595-7.959Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
